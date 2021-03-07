@@ -5,7 +5,7 @@ timeout 30
 # ホットデプロイをするか？
 preload_app true # 更新時ダウンタイム無し
 
-app_path = '/var/www/deploy_app/current'
+app_path = '/var/www/ASOBO/current'
 working_directory "#{app_path}"
 
 # nginxと連携するための設定
