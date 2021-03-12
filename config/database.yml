@@ -18,13 +18,13 @@ default: &default
   socket: /tmp/mysql.sock 
 
 production:
-  <<: *default
   adapter: mysql2
   encoding: utf8
-  database: ASOBO_development
+  pool: 5
+  database: ASOBO_production
   username: root
   password: 
-  host: 118.27.3.183 # IPアドレス
+  socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
